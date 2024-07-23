@@ -32,6 +32,7 @@ type SectionProps = PropsWithChildren<{
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
+    // This is a bad code because it's not using the `isDarkMode` variable, Lol
     <View style={styles.sectionContainer}>
       <Text
         style={[
